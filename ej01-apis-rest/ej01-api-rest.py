@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 load_dotenv()
 key = os.getenv("OPENWEATHER_API_KEY")
 
+# API Key 
+key = "3d23c8b375a528f82b5baffdd38626fa"
+
 # 1. JSONPlaceholder (GET y POST)
 t0 = time.perf_counter()
 r = requests.get("https://jsonplaceholder.typicode.com/posts", timeout=10)
