@@ -16,7 +16,7 @@ t0 = time.perf_counter()
 r = requests.post("https://jsonplaceholder.typicode.com/posts", json={"title": "nuevo"}, timeout=10)
 print("POST Post:", r.status_code, f"{(time.perf_counter()-t0)*1000:.0f} ms", len(r.content), "bytes")
 
-# 2. PokéAPI (El ejemplo original del profesor)
+# 2. PokéAPI 
 t0 = time.perf_counter()
 r = requests.get("https://pokeapi.co/api/v2/pokemon/pikachu", timeout=10)
 ms = (time.perf_counter() - t0) * 1000
